@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Secure project management dashboard with sample project data.">
+  <title>Project Management Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">PM</div>
+        <div>
+          <p class="brand-name">Northstar</p>
+          <p class="brand-caption">Delivery operations</p>
+        </div>
+      </div>
+
+      <nav class="primary-nav">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-item is-active" href="#overview" aria-current="page">
+          <span class="nav-icon" aria-hidden="true">⌂</span>
+          Overview
+        </a>
+        <a class="nav-item" href="#projects">
+          <span class="nav-icon" aria-hidden="true">▦</span>
+          Projects
+        </a>
+        <a class="nav-item" href="#tasks">
+          <span class="nav-icon" aria-hidden="true">✓</span>
+          Tasks
+        </a>
+        <a class="nav-item" href="#issues">
+          <span class="nav-icon" aria-hidden="true">!</span>
+          Issues
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="security-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Workspace secure</span>
+        </div>
+        <p>Sample environment · v1.0</p>
+      </div>
+    </aside>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <span>Workspace</span>
+          <span aria-hidden="true">/</span>
+          <strong>Overview</strong>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-button" type="button" aria-label="View notifications">
+            <span aria-hidden="true">◌</span>
+            <span class="notification-dot" aria-hidden="true"></span>
+          </button>
+          <div class="profile-chip" aria-label="Signed in as Demo user">
+            <span class="avatar" aria-hidden="true">DU</span>
+            <span class="profile-name">Demo user</span>
+            <span class="chevron" aria-hidden="true">⌄</span>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content" class="main-content">
+        <section class="page-intro" id="overview" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow">Tuesday, September 8, 2026</p>
+            <h1 id="page-title">Project Management Dashboard</h1>
+            <p class="intro-copy">A clear view of delivery health across your active portfolio.</p>
+          </div>
+          <button class="primary-button" type="button" id="new-project-button">
+            <span aria-hidden="true">+</span>
+            New project
+          </button>
+        </section>
+
+        <section class="metric-grid" aria-label="Project summary">
+          <article class="metric-card metric-card-blue">
+            <div class="metric-header">
+              <span class="metric-label">Total projects</span>
+              <span class="metric-icon" aria-hidden="true">▦</span>
+            </div>
+            <div class="metric-value">24</div>
+            <p class="metric-trend"><span class="trend-up">↑ 8.2%</span> <span>from last month</span></p>
+          </article>
+          <article class="metric-card metric-card-teal">
+            <div class="metric-header">
+              <span class="metric-label">Active tasks</span>
+              <span class="metric-icon" aria-hidden="true">◒</span>
+            </div>
+            <div class="metric-value">186</div>
+            <p class="metric-trend"><span class="trend-up">↑ 12.4%</span> <span>from last month</span></p>
+          </article>
+          <article class="metric-card metric-card-orange">
+            <div class="metric-header">
+              <span class="metric-label">Completed tasks</span>
+              <span class="metric-icon" aria-hidden="true">✓</span>
+            </div>
+            <div class="metric-value">452</div>
+            <p class="metric-trend"><span class="trend-up">↑ 5.7%</span> <span>from last month</span></p>
+          </article>
+          <article class="metric-card metric-card-red">
+            <div class="metric-header">
+              <span class="metric-label">Open issues</span>
+              <span class="metric-icon" aria-hidden="true">!</span>
+            </div>
+            <div class="metric-value">12</div>
+            <p class="metric-trend"><span class="trend-down">↓ 3.1%</span> <span>from last month</span></p>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel projects-panel" id="projects" aria-labelledby="projects-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Portfolio snapshot</p>
+                <h2 id="projects-title">Recent projects</h2>
+              </div>
+              <button class="text-button" type="button" id="view-all-button">View all <span aria-hidden="true">→</span></button>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <caption class="visually-hidden">Recent projects and their delivery status</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Project name</th>
+                    <th scope="col">Project manager</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Due date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><span class="project-name">Civic services portal</span><span class="project-code">CSP-042</span></th>
+                    <td data-label="Project manager">Jordan Lee</td>
+                    <td data-label="Status"><span class="status-badge status-active"><span aria-hidden="true"></span>Active</span></td>
+                    <td data-label="Due date">Sep 18, 2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="project-name">Digital records upgrade</span><span class="project-code">DRU-017</span></th>
+                    <td data-label="Project manager">Morgan Patel</td>
+                    <td data-label="Status"><span class="status-badge status-risk"><span aria-hidden="true"></span>At risk</span></td>
+                    <td data-label="Due date">Sep 24, 2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="project-name">Community grants platform</span><span class="project-code">CGP-031</span></th>
+                    <td data-label="Project manager">Casey Nguyen</td>
+                    <td data-label="Status"><span class="status-badge status-pending"><span aria-hidden="true"></span>Pending</span></td>
+                    <td data-label="Due date">Oct 02, 2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="project-name">Open data refresh</span><span class="project-code">ODR-009</span></th>
+                    <td data-label="Project manager">Taylor Brooks</td>
+                    <td data-label="Status"><span class="status-badge status-completed"><span aria-hidden="true"></span>Completed</span></td>
+                    <td data-label="Due date">Aug 30, 2026</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="project-name">Permit workflow redesign</span><span class="project-code">PWR-026</span></th>
+                    <td data-label="Project manager">Riley Morgan</td>
+                    <td data-label="Status"><span class="status-badge status-active"><span aria-hidden="true"></span>Active</span></td>
+                    <td data-label="Due date">Oct 11, 2026</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <aside class="panel activity-panel" id="issues" aria-labelledby="activity-title">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Latest updates</p>
+                <h2 id="activity-title">Team activity</h2>
+              </div>
+              <span class="live-indicator"><span aria-hidden="true"></span>Live</span>
+            </div>
+            <ul class="activity-list">
+              <li>
+                <span class="activity-marker marker-blue" aria-hidden="true">✓</span>
+                <div><p><strong>Permit workflow redesign</strong> reached 75% completion.</p><time datetime="2026-09-08T09:42">42 minutes ago</time></div>
+              </li>
+              <li>
+                <span class="activity-marker marker-orange" aria-hidden="true">!</span>
+                <div><p>New risk flagged in <strong>Digital records upgrade</strong>.</p><time datetime="2026-09-08T08:15">2 hours ago</time></div>
+              </li>
+              <li>
+                <span class="activity-marker marker-teal" aria-hidden="true">+</span>
+                <div><p><strong>Jordan Lee</strong> joined Civic services portal.</p><time datetime="2026-09-07T16:30">Yesterday</time></div>
+              </li>
+              <li>
+                <span class="activity-marker marker-purple" aria-hidden="true">↗</span>
+                <div><p><strong>Open data refresh</strong> moved to completed.</p><time datetime="2026-09-07T14:05">Yesterday</time></div>
+              </li>
+            </ul>
+            <button class="activity-footer" type="button" id="activity-button">See activity log <span aria-hidden="true">→</span></button>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <span>Northstar workspace</span>
+        <span>All figures are sample data for demonstration.</span>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite" aria-hidden="true"></div>
+</body>
+</html>
