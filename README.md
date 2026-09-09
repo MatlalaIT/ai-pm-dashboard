@@ -1,4 +1,4 @@
-# Project Management Dashboard!!
+# PROJECT MANAGEMENT DASHBOARD!!
 
 ## Purpose
 
