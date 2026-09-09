@@ -1,6 +1,6 @@
 # PROJECT MANAGEMENT DASHBOARD!!
 
-## Purpose
+## PURPOSE
 
 This project provides an initial enterprise-style dashboard for monitoring project delivery. It is a static UI prototype intended to demonstrate portfolio summaries, recent project status, and team activity without connecting to production systems.
 
