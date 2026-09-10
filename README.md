@@ -20,7 +20,7 @@ This project provides an initial enterprise-style dashboard for monitoring proje
 - Vanilla JavaScript for navigation and local UI interactions
 - Vitest and jsdom for unit tests only
 
-## Files
+## FILES
 
 - `index.html` contains the dashboard structure, accessibility attributes, and sample project data.
 - `style.css` contains the responsive layout, color system, status indicators, and mobile table presentation.
