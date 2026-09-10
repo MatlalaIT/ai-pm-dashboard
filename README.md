@@ -13,7 +13,7 @@ This project provides an initial enterprise-style dashboard for monitoring proje
 - Accessible semantic HTML, skip navigation, focus states, ARIA labels, and mobile navigation
 - Local demo feedback for the New project, View all, and activity actions
 
-## Technology
+## TECHNOLOGY
 
 - HTML5 for semantic document structure
 - CSS3 for responsive layout, visual styling, and reduced-motion support
