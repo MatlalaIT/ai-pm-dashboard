@@ -56,6 +56,6 @@ Use `npm run test:watch` for an interactive test loop in VS Code. The tests use 
 - The current “secure” presentation is only a prototype state, not an authentication or authorization control.
 - Production deployment should use HTTPS, a restrictive Content Security Policy, security headers, authenticated access, server-side authorization, input validation, and appropriate logging.
 
-## GitHub Copilot usage
+## GITHUB COPILOT USAGE
 
 GitHub Copilot was used as a development assistant to help scaffold the initial UI, suggest accessible responsive markup and styles, review the JavaScript for security and maintainability concerns, and generate focused unit tests. All generated code and sample data were reviewed against the project requirements. Copilot was not given or used to generate passwords, credentials, tokens, or real personal information.
