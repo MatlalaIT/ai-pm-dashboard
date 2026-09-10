@@ -41,7 +41,7 @@ The dashboard currently uses hardcoded fictional sample data in `index.html`. It
 
 Install the test-only dependencies and run the unit tests from the project directory:
 
-```text
+```TEXT
 npm install
 npm test
 ```
