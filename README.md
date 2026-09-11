@@ -48,7 +48,7 @@ npm test
 
 Use `npm run test:watch` for an interactive test loop in VS Code. The tests use Vitest with jsdom to exercise the browser event handlers against a lightweight DOM. A passing test confirms that an expected behavior matches its assertion; a failing test indicates a regression, changed contract, or test expectation that needs review.
 
-## SECURITY considerations
+## SECURITY  CONSIDERATIONS
 
 - All names, dates, counts, and activity entries are fictional sample data. No real personal information, passwords, API keys, access tokens, or secrets are included.
 - The static UI makes no network requests and includes no tracking scripts or unnecessary runtime libraries.
