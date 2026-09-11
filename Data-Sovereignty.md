@@ -58,4 +58,4 @@ The solution aligns with key GDPR principles.
 
 ## Conclusion
 
-The AI Project Management Dashboard prototype uses fictional project data and follows foundational governance, compliance, and security practices appropriate for a training and demonstration environment.
+The AI Project Management Dashboard prototype uses fictional project data and follows foundational governance, compliance, and security practices. Data access is controlled through GitHub and Microsoft Power Platform permissions, and no sensitive personal information is processed within the solution.
