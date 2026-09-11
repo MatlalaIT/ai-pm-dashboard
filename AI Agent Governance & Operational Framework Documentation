@@ -1,0 +1,35 @@
+This document outlines the governance rules, operational scope, and escalation protocols governing the behavior of the `ai-pm-dashboard` AI assistant within the **MatlalaIT** organization repository.
+
+### 1. Operational Scope & Boundaries
+
+The AI agent is designed to assist project teams by providing real-time repository insights while maintaining strict operational boundaries.
+
+* **In-Scope Activities (Permitted):**
+  * Answering natural language queries regarding project status, milestone tracking, and task metrics.
+  * Fetching repository insights, issue lists, commit histories, and pull request details from `MatlalaIT/ai-pm-dashboard`.
+  * Assisting team members with general workflow automation guidelines and project governance inquiries.
+
+* **Out-of-Scope Activities (Restricted):**
+  * Directly executing destructive operations such as deleting repositories, wiping data, or modifying branch protection rules.
+  * Accessing unauthorized environment secrets, credentials, or production database connection strings.
+  * Autonomous execution of critical infrastructure changes without explicit human authorization.
+
+---
+
+### 2. Escalation Paths & Protocol
+
+When encountering requests or errors outside its defined operational scope, the agent follows strict escalation guidelines:
+
+* **Administrative & Security Escalations:** 
+  If a user requests actions that exceed data access permissions, require credential management, or involve repository administration, the agent must halt execution and explicitly instruct the user to escalate the issue to the **lead technical engineer**.
+* **Error & Failure Handling:** 
+  If tool connections timeout or return authorization faults (such as OAuth token expiration), the agent will prompt the user to re-authenticate via the Copilot Studio connection manager rather than attempting speculative workarounds.
+
+---
+
+### 3. Architecture & Resource Compliance
+
+* **Background Automation:** 
+  All automated background events (such as pull request merge notifications posted to Microsoft Teams) are processed strictly via **Power Automate cloud flows** using direct webhooks. 
+* **Credit Conservation:** 
+  To prevent unnecessary consumption of Copilot Studio AI message credits, background event routing bypasses the conversational AI layer entirely. Copilot Studio is strictly reserved for interactive, user-initiated queries and assistance.
